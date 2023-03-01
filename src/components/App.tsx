@@ -5,6 +5,16 @@ import { useForm } from "react-hook-form";
 import { FiFile } from "react-icons/fi";
 import { useRef } from "react";
 import { svgToPng } from "~/convert";
+import init, { to_ico } from "~/../ico/pkg/ico";
+
+const pngSizes = {
+  favicon: 32,
+  appleTouchIcon: 180,
+  androidChrome192: 192,
+  androidChrome512: 512,
+};
+
+await init();
 
 type FormData = {
   file: FileList;
@@ -19,10 +29,16 @@ function App(): JSX.Element {
     if (!file || !imageRef.current) return;
 
     const svg = await file.text();
-    const png = svgToPng(svg, 512);
-    const pngBlob = new Blob([png], { type: "image/png" });
-    const pngUrl = URL.createObjectURL(pngBlob);
-    imageRef.current.src = pngUrl;
+    const image = svgToPng(svg, 32);
+
+    // const png = image.asPng();
+    // const pngBlob = new Blob([png], { type: "image/png" });
+    // const pngUrl = URL.createObjectURL(pngBlob);
+
+    const ico = to_ico(image.width, image.height, image.pixels);
+    const icoBlob = new Blob([ico], { type: "image/x-icon" });
+    const icoUrl = URL.createObjectURL(icoBlob);
+    imageRef.current.src = icoUrl;
   });
 
   return (
