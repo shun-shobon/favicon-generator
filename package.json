@@ -12,9 +12,12 @@
     "@chakra-ui/react": "^2.5.1",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@resvg/resvg-wasm": "^2.4.1",
     "framer-motion": "^10.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.2",
+    "react-icons": "^4.7.1"
   },
   "devDependencies": {
     "@types/node": "^18.14.2",

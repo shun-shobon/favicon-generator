@@ -26,4 +26,7 @@ export default defineConfig({
   resolve: {
     alias,
   },
+  build: {
+    target: "esnext",
+  },
 });
