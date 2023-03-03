@@ -1,7 +1,7 @@
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import html from "react-syntax-highlighter/dist/esm/languages/prism/markup";
 import { nord } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { Heading, Text, Link, Box } from "@chakra-ui/react";
+import { Heading, Text, Link, Box, Code } from "@chakra-ui/react";
 import headHtml from "~/assets/favicon.html?raw";
 import { useEffect, useRef } from "react";
 
@@ -37,7 +37,7 @@ export function Success({ data, onOneMore }: Props): JSX.Element {
         favicons zip file.
       </Text>
       <Text>
-        Add the following code to the <code>{"<head>"}</code> tag of your HTML
+        Add the following code to the <Code>{"<head>"}</Code> tag of your HTML
         file.
       </Text>
       <SyntaxHighlighter
