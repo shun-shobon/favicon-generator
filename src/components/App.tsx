@@ -1,4 +1,4 @@
-import { Heading, VStack } from "@chakra-ui/react";
+import { Heading, Link, VStack, Text } from "@chakra-ui/react";
 import { FileInput } from "./FileInput";
 import { Success } from "./Success";
 import { useState } from "react";
@@ -41,6 +41,12 @@ function App(): JSX.Element {
       ) : (
         <FileInput loading={loading} onFileSubmit={handleFileSubmit} />
       )}
+      <Text fontSize="sm" color="gray.500">
+        Copyright © 2023{" "}
+        <Link target="_blank" href="https://s2n.tech" color="teal.400">
+          Shuntaro Nishizawa (しゅん🌙)
+        </Link>
+      </Text>
     </VStack>
   );
 }
