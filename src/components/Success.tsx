@@ -48,7 +48,7 @@ export function Success({ data, onOneMore }: Props): JSX.Element {
       >
         {headHtml.trim()}
       </SyntaxHighlighter>
-      <Link color="teal.400" fontWeight={700} onClick={onOneMore}>
+      <Link color="gray.400" fontWeight={700} onClick={onOneMore}>
         One more?
       </Link>
     </Box>

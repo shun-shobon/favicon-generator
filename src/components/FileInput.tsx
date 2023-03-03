@@ -1,6 +1,6 @@
-import { Box, Link, VStack } from "@chakra-ui/react";
+import { Box, Link, VStack, Spinner, Icon } from "@chakra-ui/react";
 import { ChangeEvent, DragEvent, useId, useState } from "react";
-import { Spinner } from "@chakra-ui/react";
+import { FiUpload } from "react-icons/fi";
 
 type Props = {
   loading: boolean;
@@ -36,13 +36,14 @@ export function FileInput({ loading, onFileSubmit }: Props): JSX.Element {
   };
 
   return (
-    <Box
+    <VStack
       as="form"
       onDrop={handleDrop}
       onDragOver={handleDragOver}
       onDragLeave={() => setDragOver(false)}
       w="full"
       maxW="container.md"
+      gap={4}
       px={10}
       py={20}
       textAlign="center"
@@ -53,13 +54,6 @@ export function FileInput({ loading, onFileSubmit }: Props): JSX.Element {
       borderStyle="dotted"
       borderRadius="lg"
     >
-      <input
-        type="file"
-        accept="image/svg+xml"
-        id={inputId}
-        hidden
-        onChange={handleChange}
-      />
       {loading && (
         <VStack
           position="absolute"
@@ -68,23 +62,31 @@ export function FileInput({ loading, onFileSubmit }: Props): JSX.Element {
           top={0}
           left={0}
           justify="center"
-          bgColor="gray.100"
+          bgColor="gray.50"
           marginTop={0}
         >
           <Spinner
             size="xl"
             thickness="4px"
             emptyColor="gray.200"
-            color="gray.600"
+            color="teal.400"
           />
         </VStack>
       )}
+      <input
+        type="file"
+        accept="image/svg+xml"
+        id={inputId}
+        hidden
+        onChange={handleChange}
+      />
+      <Icon as={FiUpload} w={12} h={12} color="gray.400" />
       <Box>
         <Link as="label" htmlFor={inputId} color="teal.400" fontWeight={700}>
           Click to upload
         </Link>{" "}
         or drag and drop
       </Box>
-    </Box>
+    </VStack>
   );
 }
