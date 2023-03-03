@@ -5,7 +5,8 @@ import { useForm } from "react-hook-form";
 import { FiFile } from "react-icons/fi";
 import { useRef } from "react";
 import { svgToPng } from "~/convert";
-import init, { to_ico } from "~/../ico/pkg/ico";
+import { createIco } from "~/ico";
+// import init, { to_ico } from "~/../ico/pkg/ico";
 
 const pngSizes = {
   favicon: 32,
@@ -13,8 +14,6 @@ const pngSizes = {
   androidChrome192: 192,
   androidChrome512: 512,
 };
-
-await init();
 
 type FormData = {
   file: FileList;
@@ -35,7 +34,7 @@ function App(): JSX.Element {
     // const pngBlob = new Blob([png], { type: "image/png" });
     // const pngUrl = URL.createObjectURL(pngBlob);
 
-    const ico = to_ico(image.width, image.height, image.pixels);
+    const ico = createIco(image.width, image.height, image.pixels);
     const icoBlob = new Blob([ico], { type: "image/x-icon" });
     const icoUrl = URL.createObjectURL(icoBlob);
     imageRef.current.src = icoUrl;
