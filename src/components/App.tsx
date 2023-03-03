@@ -36,12 +36,10 @@ function App(): JSX.Element {
       >
         SVG Favicon Generator
       </Heading>
-      {loading ? (
-        <div>Loading...</div>
-      ) : data ? (
+      {data && !loading ? (
         <Success data={data} onOneMore={handleOneMore} />
       ) : (
-        <FileInput onFileSubmit={handleFileSubmit} />
+        <FileInput loading={loading} onFileSubmit={handleFileSubmit} />
       )}
     </VStack>
   );
