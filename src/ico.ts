@@ -5,7 +5,7 @@ const BMP_INFO_HEADER_SIZE = 40;
 export function createIco(
   width: number,
   height: number,
-  pixels: Uint8Array,
+  pixels: Uint8Array | Uint8ClampedArray,
 ): Uint8Array {
   const bmpHeight = height * 2;
   const bmpImageSize = bmpHeight * width * 4;
