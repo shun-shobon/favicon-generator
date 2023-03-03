@@ -8,6 +8,8 @@ import {
 import JSZip from "jszip";
 import { createIco } from "./ico";
 
+import webmanifest from "~/assets/manifest.webmanifest?raw";
+
 await initWasm(fetch(wasmUrl));
 
 export async function process(svg: string): Promise<Blob> {
@@ -36,6 +38,7 @@ export async function process(svg: string): Promise<Blob> {
   zip.file("apple-touch-icon.png", appleTouchIcon);
   zip.file("android-chrome-192x192.png", androidChrome192);
   zip.file("android-chrome-512x512.png", androidChrome512);
+  zip.file("manifest.webmanifest", webmanifest);
 
   const blob = await zip.generateAsync({ type: "blob" });
   return blob;

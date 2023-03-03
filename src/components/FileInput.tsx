@@ -33,7 +33,10 @@ export function FileInput({ onFileSubmit }: Props): JSX.Element {
       as="form"
       onDrop={handleDrop}
       onDragOver={handleDragOver}
-      p={20}
+      w="full"
+      maxW="container.md"
+      px={10}
+      py={20}
       borderWidth={2}
       borderStyle="dotted"
       borderRadius="lg"
@@ -46,7 +49,7 @@ export function FileInput({ onFileSubmit }: Props): JSX.Element {
         onChange={handleChange}
       />
       <Box>
-        <Link as="label" htmlFor={inputId} color="teal.500">
+        <Link as="label" htmlFor={inputId} color="teal.400">
           Click to upload
         </Link>{" "}
         or drag and drop
