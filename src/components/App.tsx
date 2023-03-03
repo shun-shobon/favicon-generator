@@ -1,4 +1,4 @@
-import { VStack, Image } from "@chakra-ui/react";
+import { VStack, Link } from "@chakra-ui/react";
 import { FormControl, FormLabel, Button, Icon } from "@chakra-ui/react";
 import { FileUpload } from "./FileUpload";
 import { useForm } from "react-hook-form";
@@ -6,9 +6,9 @@ import { FiFile } from "react-icons/fi";
 import { useRef } from "react";
 import { svgToPng } from "~/convert";
 import { createIco } from "~/ico";
-// import init, { to_ico } from "~/../ico/pkg/ico";
+import JSZip from "jszip";
 
-const pngSizes = {
+const sizes = {
   favicon: 32,
   appleTouchIcon: 180,
   androidChrome192: 192,
@@ -21,23 +21,34 @@ type FormData = {
 
 function App(): JSX.Element {
   const { register, handleSubmit } = useForm<FormData>();
-  const imageRef = useRef<HTMLImageElement>(null);
+  const downloadRef = useRef<HTMLAnchorElement>(null);
 
   const onSubmit = handleSubmit(async (data) => {
     const file = data.file[0];
-    if (!file || !imageRef.current) return;
+    if (!file || !downloadRef.current) return;
 
     const svg = await file.text();
-    const image = svgToPng(svg, 32);
 
-    // const png = image.asPng();
-    // const pngBlob = new Blob([png], { type: "image/png" });
-    // const pngUrl = URL.createObjectURL(pngBlob);
+    const faviconPng = svgToPng(svg, sizes.favicon);
+    const faviconIco = createIco(
+      faviconPng.width,
+      faviconPng.height,
+      faviconPng.pixels,
+    );
 
-    const ico = createIco(image.width, image.height, image.pixels);
-    const icoBlob = new Blob([ico], { type: "image/x-icon" });
-    const icoUrl = URL.createObjectURL(icoBlob);
-    imageRef.current.src = icoUrl;
+    const appleTouchIconPng = svgToPng(svg, sizes.appleTouchIcon).asPng();
+    const androidChrome192Png = svgToPng(svg, sizes.androidChrome192).asPng();
+    const androidChrome512Png = svgToPng(svg, sizes.androidChrome512).asPng();
+
+    const zip = new JSZip();
+    zip.file("icon.svg", svg);
+    zip.file("favicon.ico", faviconIco);
+    zip.file("apple-touch-icon.png", appleTouchIconPng);
+    zip.file("android-chrome-192x192.png", androidChrome192Png);
+    zip.file("android-chrome-512x512.png", androidChrome512Png);
+
+    const content = await zip.generateAsync({ type: "blob" });
+    downloadRef.current.href = URL.createObjectURL(content);
   });
 
   return (
@@ -54,7 +65,9 @@ function App(): JSX.Element {
         </FormControl>
       </VStack>
 
-      <Image ref={imageRef} />
+      <Link download ref={downloadRef}>
+        ダウンロード
+      </Link>
     </VStack>
   );
 }
