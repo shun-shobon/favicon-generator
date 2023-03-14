@@ -5,7 +5,7 @@ specifiers:
   '@emotion/react': ^11.10.6
   '@emotion/styled': ^11.10.6
   '@resvg/resvg-wasm': ^2.4.1
-  '@types/node': ^18.14.6
+  '@types/node': ^18.15.3
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
   '@types/react-syntax-highlighter': ^15.5.6
