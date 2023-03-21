@@ -13,7 +13,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@resvg/resvg-wasm": "^2.4.1",
-    "framer-motion": "^10.8.2",
+    "framer-motion": "^10.8.3",
     "jszip": "^3.10.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
