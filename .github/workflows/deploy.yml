@@ -11,23 +11,11 @@ jobs:
       contents: read
       deployments: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - uses: shun-shobon/actions/setup-node@master
         with:
-          node-version: "lts/*"
-      - run: corepack enable
-      - id: pnpm
-        run: echo "cache-dir=$(pnpm store path)" >> $GITHUB_OUTPUT
-      - uses: actions/cache@v3
-        with:
-          path: ${{ steps.pnpm.outputs.cache-dir }}
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
+          node-version: lts/*
 
-      - run: pnpm install --frozen-lockfile
       - run: pnpm build
 
       - name: Publish to Cloudflare Pages
