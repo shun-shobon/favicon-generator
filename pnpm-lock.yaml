@@ -34,8 +34,8 @@ dependencies:
 
 devDependencies:
   '@types/node':
-    specifier: ^18.16.5
-    version: 18.16.5
+    specifier: ^18.16.6
+    version: 18.16.6
   '@types/react':
     specifier: ^18.2.6
     version: 18.2.6
@@ -56,7 +56,7 @@ devDependencies:
     version: 5.0.4
   vite:
     specifier: ^4.3.5
-    version: 4.3.5(@types/node@18.16.5)
+    version: 4.3.5(@types/node@18.16.6)
   vite-plugin-html:
     specifier: ^3.2.0
     version: 3.2.0(vite@4.3.5)
@@ -1793,8 +1793,8 @@ packages:
     resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
     dev: false
 
-  /@types/node@18.16.5:
-    resolution: {integrity: sha512-seOA34WMo9KB+UA78qaJoCO20RJzZGVXQ5Sh6FWu0g/hfT44nKXnej3/tCQl7FL97idFpBhisLYCTB50S0EirA==}
+  /@types/node@18.16.6:
+    resolution: {integrity: sha512-N7KINmeB8IN3vRR8dhgHEp+YpWvGFcpDoh5XZ8jB5a00AdFKCKEyyGTOPTddUf4JqU1ZKTVxkOxakDvchNVI2Q==}
     dev: true
 
   /@types/parse-json@4.0.0:
@@ -1840,7 +1840,7 @@ packages:
       '@babel/plugin-transform-react-jsx-self': 7.21.0(@babel/core@7.21.4)
       '@babel/plugin-transform-react-jsx-source': 7.19.6(@babel/core@7.21.4)
       react-refresh: 0.14.0
-      vite: 4.3.5(@types/node@18.16.5)
+      vite: 4.3.5(@types/node@18.16.6)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3127,10 +3127,10 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 4.3.5(@types/node@18.16.5)
+      vite: 4.3.5(@types/node@18.16.6)
     dev: true
 
-  /vite@4.3.5(@types/node@18.16.5):
+  /vite@4.3.5(@types/node@18.16.6):
     resolution: {integrity: sha512-0gEnL9wiRFxgz40o/i/eTBwm+NEbpUeTWhzKrZDSdKm6nplj+z4lKz8ANDgildxHm47Vg8EUia0aicKbawUVVA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -3155,7 +3155,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.16.5
+      '@types/node': 18.16.6
       esbuild: 0.17.12
       postcss: 8.4.23
       rollup: 3.21.0
