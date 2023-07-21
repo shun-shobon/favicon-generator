@@ -38,8 +38,8 @@ dependencies:
 
 devDependencies:
   '@types/node':
-    specifier: ^18.16.19
-    version: 18.16.19
+    specifier: ^18.16.20
+    version: 18.16.20
   '@types/react':
     specifier: ^18.2.15
     version: 18.2.15
@@ -60,7 +60,7 @@ devDependencies:
     version: 5.1.6
   vite:
     specifier: ^4.4.6
-    version: 4.4.6(@types/node@18.16.19)
+    version: 4.4.6(@types/node@18.16.20)
   vite-plugin-html:
     specifier: ^3.2.0
     version: 3.2.0(vite@4.4.6)
@@ -1809,8 +1809,8 @@ packages:
     resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
     dev: false
 
-  /@types/node@18.16.19:
-    resolution: {integrity: sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==}
+  /@types/node@18.16.20:
+    resolution: {integrity: sha512-nL54VfDjThdP2UXJXZao5wp76CDiDw4zSRO8d4Tk7UgDqNKGKVEQB0/t3ti63NS+YNNkIQDvwEAF04BO+WYu7Q==}
     dev: true
 
   /@types/parse-json@4.0.0:
@@ -1856,7 +1856,7 @@ packages:
       '@babel/plugin-transform-react-jsx-self': 7.22.5(@babel/core@7.22.5)
       '@babel/plugin-transform-react-jsx-source': 7.22.5(@babel/core@7.22.5)
       react-refresh: 0.14.0
-      vite: 4.4.6(@types/node@18.16.19)
+      vite: 4.4.6(@types/node@18.16.20)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3149,10 +3149,10 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 4.4.6(@types/node@18.16.19)
+      vite: 4.4.6(@types/node@18.16.20)
     dev: true
 
-  /vite@4.4.6(@types/node@18.16.19):
+  /vite@4.4.6(@types/node@18.16.20):
     resolution: {integrity: sha512-EY6Mm8vJ++S3D4tNAckaZfw3JwG3wa794Vt70M6cNJ6NxT87yhq7EC8Rcap3ahyHdo8AhCmV9PTk+vG1HiYn1A==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -3180,7 +3180,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.16.19
+      '@types/node': 18.16.20
       esbuild: 0.18.11
       postcss: 8.4.26
       rollup: 3.26.2
