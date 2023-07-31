@@ -1,4 +1,5 @@
 {
+  "name": "favicon-generator",
   "author": "Shuntaro Nishizawa <me@shun.technology> (https://github.com/shun-shobon)",
   "license": "MIT",
   "private": true,
