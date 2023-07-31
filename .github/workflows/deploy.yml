@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: shun-shobon/actions/setup-node@master
         with:
-          node-version: lts/*
+          node-version-file: .tool-versions
 
       - run: pnpm build
 
