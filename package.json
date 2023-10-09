@@ -25,7 +25,7 @@
     "@types/node": "^18.18.4",
     "@types/react": "^18.2.26",
     "@types/react-dom": "^18.2.11",
-    "@types/react-syntax-highlighter": "^15.5.7",
+    "@types/react-syntax-highlighter": "^15.5.8",
     "@vitejs/plugin-react": "^4.1.0",
     "prettier": "^3.0.3",
     "typescript": "5.2.2",
