@@ -15,8 +15,8 @@ dependencies:
     specifier: ^11.11.0
     version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.31)(react@18.2.0)
   '@resvg/resvg-wasm':
-    specifier: ^2.5.0
-    version: 2.5.0
+    specifier: ^2.6.0
+    version: 2.6.0
   framer-motion:
     specifier: ^10.16.4
     version: 10.16.4(react-dom@18.2.0)(react@18.2.0)
@@ -1825,8 +1825,8 @@ packages:
     resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
     dev: false
 
-  /@resvg/resvg-wasm@2.5.0:
-    resolution: {integrity: sha512-jM0zG54ykoGFiMMVvRxzHFVXhxCdQTGp+okLCWGIXt8bN2GLlsWpjvyU0vZJWkTsd+qLmy2dmYcPU02zC0IVMQ==}
+  /@resvg/resvg-wasm@2.6.0:
+    resolution: {integrity: sha512-iDkBM6Ivex8nULtBu8cX670/lfsGxq8U1cuqE+qS9xFpPQP1enPdVm/33Kq3+B+bAldA+AHNZnCgpmlHo/fZrQ==}
     engines: {node: '>= 10'}
     dev: false
 
