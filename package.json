@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/node": "^18.19.21",
     "@types/react": "^18.2.63",
-    "@types/react-dom": "^18.2.19",
+    "@types/react-dom": "^18.2.20",
     "@types/react-syntax-highlighter": "^15.5.11",
     "@vitejs/plugin-react": "^4.2.1",
     "prettier": "^3.2.5",
