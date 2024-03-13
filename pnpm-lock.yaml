@@ -38,8 +38,8 @@ dependencies:
 
 devDependencies:
   '@types/node':
-    specifier: ^18.19.23
-    version: 18.19.23
+    specifier: ^18.19.24
+    version: 18.19.24
   '@types/react':
     specifier: ^18.2.65
     version: 18.2.65
@@ -60,7 +60,7 @@ devDependencies:
     version: 5.4.2
   vite:
     specifier: ^5.1.6
-    version: 5.1.6(@types/node@18.19.23)
+    version: 5.1.6(@types/node@18.19.24)
   vite-plugin-html:
     specifier: ^3.2.2
     version: 3.2.2(vite@5.1.6)
@@ -1930,8 +1930,8 @@ packages:
     resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
     dev: false
 
-  /@types/node@18.19.23:
-    resolution: {integrity: sha512-wtE3d0OUfNKtZYAqZb8HAWGxxXsImJcPUAgZNw+dWFxO6s5tIwIjyKnY76tsTatsNCLJPkVYwUpq15D38ng9Aw==}
+  /@types/node@18.19.24:
+    resolution: {integrity: sha512-eghAz3gnbQbvnHqB+mgB2ZR3aH6RhdEmHGS48BnV75KceQPHqabkxKI0BbUSsqhqy2Ddhc2xD/VAR9ySZd57Lw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1980,7 +1980,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.23.3(@babel/core@7.24.0)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 5.1.6(@types/node@18.19.23)
+      vite: 5.1.6(@types/node@18.19.24)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3291,10 +3291,10 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 5.1.6(@types/node@18.19.23)
+      vite: 5.1.6(@types/node@18.19.24)
     dev: true
 
-  /vite@5.1.6(@types/node@18.19.23):
+  /vite@5.1.6(@types/node@18.19.24):
     resolution: {integrity: sha512-yYIAZs9nVfRJ/AiOLCA91zzhjsHUgMjB+EigzFb6W2XTLO8JixBCKCjvhKZaye+NKYHCrkv3Oh50dH9EdLU2RA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -3322,7 +3322,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.19.23
+      '@types/node': 18.19.24
       esbuild: 0.19.12
       postcss: 8.4.35
       rollup: 4.12.1
