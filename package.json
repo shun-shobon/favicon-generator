@@ -14,7 +14,7 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@resvg/resvg-wasm": "^2.6.2",
-    "framer-motion": "^11.0.23",
+    "framer-motion": "^11.0.24",
     "jszip": "^3.10.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
