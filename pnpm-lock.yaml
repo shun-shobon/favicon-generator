@@ -40,8 +40,8 @@ importers:
         version: 15.5.0(react@18.3.1)
     devDependencies:
       '@types/node':
-        specifier: ^18.19.31
-        version: 18.19.31
+        specifier: ^18.19.32
+        version: 18.19.32
       '@types/react':
         specifier: ^18.3.1
         version: 18.3.1
@@ -53,7 +53,7 @@ importers:
         version: 15.5.13
       '@vitejs/plugin-react':
         specifier: ^4.2.1
-        version: 4.2.1(vite@5.2.11(@types/node@18.19.31)(terser@5.31.0))
+        version: 4.2.1(vite@5.2.11(@types/node@18.19.32)(terser@5.31.0))
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -62,10 +62,10 @@ importers:
         version: 5.4.5
       vite:
         specifier: ^5.2.11
-        version: 5.2.11(@types/node@18.19.31)(terser@5.31.0)
+        version: 5.2.11(@types/node@18.19.32)(terser@5.31.0)
       vite-plugin-html:
         specifier: ^3.2.2
-        version: 3.2.2(vite@5.2.11(@types/node@18.19.31)(terser@5.31.0))
+        version: 3.2.2(vite@5.2.11(@types/node@18.19.32)(terser@5.31.0))
 
 packages:
 
@@ -993,8 +993,8 @@ packages:
   '@types/lodash@4.17.1':
     resolution: {integrity: sha512-X+2qazGS3jxLAIz5JDXDzglAF3KpijdhFxlf/V1+hEsOUc+HnWi81L/uv/EvGuV90WY+7mPGFCUDGfQC3Gj95Q==}
 
-  '@types/node@18.19.31':
-    resolution: {integrity: sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==}
+  '@types/node@18.19.32':
+    resolution: {integrity: sha512-2bkg93YBSDKk8DLmmHnmj/Rwr18TLx7/n+I23BigFwgexUJoMHZOd8X1OFxuF/W3NN0S2W2E5sVabI5CPinNvA==}
 
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
@@ -2943,7 +2943,7 @@ snapshots:
 
   '@types/lodash@4.17.1': {}
 
-  '@types/node@18.19.31':
+  '@types/node@18.19.32':
     dependencies:
       undici-types: 5.26.5
 
@@ -2966,14 +2966,14 @@ snapshots:
 
   '@types/unist@2.0.10': {}
 
-  '@vitejs/plugin-react@4.2.1(vite@5.2.11(@types/node@18.19.31)(terser@5.31.0))':
+  '@vitejs/plugin-react@4.2.1(vite@5.2.11(@types/node@18.19.32)(terser@5.31.0))':
     dependencies:
       '@babel/core': 7.24.5
       '@babel/plugin-transform-react-jsx-self': 7.24.5(@babel/core@7.24.5)
       '@babel/plugin-transform-react-jsx-source': 7.24.1(@babel/core@7.24.5)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.2.11(@types/node@18.19.31)(terser@5.31.0)
+      vite: 5.2.11(@types/node@18.19.32)(terser@5.31.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -3726,7 +3726,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-html@3.2.2(vite@5.2.11(@types/node@18.19.31)(terser@5.31.0)):
+  vite-plugin-html@3.2.2(vite@5.2.11(@types/node@18.19.32)(terser@5.31.0)):
     dependencies:
       '@rollup/pluginutils': 4.2.1
       colorette: 2.0.20
@@ -3740,15 +3740,15 @@ snapshots:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 5.2.11(@types/node@18.19.31)(terser@5.31.0)
+      vite: 5.2.11(@types/node@18.19.32)(terser@5.31.0)
 
-  vite@5.2.11(@types/node@18.19.31)(terser@5.31.0):
+  vite@5.2.11(@types/node@18.19.32)(terser@5.31.0):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.17.2
     optionalDependencies:
-      '@types/node': 18.19.31
+      '@types/node': 18.19.32
       fsevents: 2.3.3
       terser: 5.31.0
 
