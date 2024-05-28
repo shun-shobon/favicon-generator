@@ -53,7 +53,7 @@ importers:
         version: 15.5.13
       '@vitejs/plugin-react':
         specifier: ^4.3.0
-        version: 4.3.0(vite@5.2.11(@types/node@18.19.33)(terser@5.31.0))
+        version: 4.3.0(vite@5.2.12(@types/node@18.19.33)(terser@5.31.0))
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -61,11 +61,11 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
       vite:
-        specifier: ^5.2.11
-        version: 5.2.11(@types/node@18.19.33)(terser@5.31.0)
+        specifier: ^5.2.12
+        version: 5.2.12(@types/node@18.19.33)(terser@5.31.0)
       vite-plugin-html:
         specifier: ^3.2.2
-        version: 3.2.2(vite@5.2.11(@types/node@18.19.33)(terser@5.31.0))
+        version: 3.2.2(vite@5.2.12(@types/node@18.19.33)(terser@5.31.0))
 
 packages:
 
@@ -1784,8 +1784,8 @@ packages:
     peerDependencies:
       vite: '>=2.0.0'
 
-  vite@5.2.11:
-    resolution: {integrity: sha512-HndV31LWW05i1BLPMUCE1B9E9GFbOu1MbenhS58FuK6owSO5qHm7GiCotrNY1YE5rMeQSFBGmT5ZaLEjFizgiQ==}
+  vite@5.2.12:
+    resolution: {integrity: sha512-/gC8GxzxMK5ntBwb48pR32GGhENnjtY30G4A0jemunsBkiEZFw60s8InGpN8gkhHEkjnRK1aSAxeQgwvFhUHAA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -2963,14 +2963,14 @@ snapshots:
 
   '@types/unist@2.0.10': {}
 
-  '@vitejs/plugin-react@4.3.0(vite@5.2.11(@types/node@18.19.33)(terser@5.31.0))':
+  '@vitejs/plugin-react@4.3.0(vite@5.2.12(@types/node@18.19.33)(terser@5.31.0))':
     dependencies:
       '@babel/core': 7.24.6
       '@babel/plugin-transform-react-jsx-self': 7.24.6(@babel/core@7.24.6)
       '@babel/plugin-transform-react-jsx-source': 7.24.6(@babel/core@7.24.6)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.2.11(@types/node@18.19.33)(terser@5.31.0)
+      vite: 5.2.12(@types/node@18.19.33)(terser@5.31.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -3723,7 +3723,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-html@3.2.2(vite@5.2.11(@types/node@18.19.33)(terser@5.31.0)):
+  vite-plugin-html@3.2.2(vite@5.2.12(@types/node@18.19.33)(terser@5.31.0)):
     dependencies:
       '@rollup/pluginutils': 4.2.1
       colorette: 2.0.20
@@ -3737,9 +3737,9 @@ snapshots:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 5.2.11(@types/node@18.19.33)(terser@5.31.0)
+      vite: 5.2.12(@types/node@18.19.33)(terser@5.31.0)
 
-  vite@5.2.11(@types/node@18.19.33)(terser@5.31.0):
+  vite@5.2.12(@types/node@18.19.33)(terser@5.31.0):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
