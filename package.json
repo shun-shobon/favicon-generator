@@ -10,7 +10,7 @@
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,scss}'"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.8.2",
+    "@chakra-ui/react": "^2.9.1",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@resvg/resvg-wasm": "^2.6.2",
