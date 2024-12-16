@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.10.4",
-    "@emotion/react": "^11.13.5",
-    "@emotion/styled": "^11.13.5",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@resvg/resvg-wasm": "^2.6.2",
     "framer-motion": "^11.13.1",
     "jszip": "^3.10.1",
