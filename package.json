@@ -22,7 +22,7 @@
     "react-syntax-highlighter": "^15.6.1"
   },
   "devDependencies": {
-    "@types/node": "^18.19.71",
+    "@types/node": "^18.19.74",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@types/react-syntax-highlighter": "^15.5.13",
